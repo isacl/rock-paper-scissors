@@ -5,11 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- Scoreboard containing the players's and the computer's scores. -->
+    <div class="section" id="scoreboard">
+
+        <div class="title">Scoreboard</div>
+
+        <div>
+            <div class="player-info">
+                <div class="name">Player</div>
+                <div class="score" id="player-score"></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="player-info">
+                <div class="name">Computer</div>
+                <div class="score" id="computer-score"></div>
+            </div>
+        </div>
+
+        <button id="restart-button">↺ Restart</button>
+
+    </div>
+
+    <!-- Ask the player for input and show them buttons to choose a shape. -->
+    <div class="section" id="input">
+
+        <div class="message" id="prompt"></div>
+
+        <div class="section" id="shape-selector">
+            <div class="choice">
+                <button class="rock"></button>
+                <div class="caption">Rock</div>
+            </div>
+            <div class="choice">
+                <button class="paper"></button>
+                <div class="caption">Paper</div>
+            </div>
+            <div class="choice">
+                <button class="scissors"></button>
+                <div class="caption">Scissors</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Show the shapes chosen by the player and by the computer, and inform who scored. -->
+    <div class="section is-hidden" id="round-results">
+
+        <div class="message" id="scorer-message"></div>
+
+        <div id="chosen-shapes">
+
+            <div class="choice" id="player-choice">
+                <img>
+                <div class="caption"></div>
+            </div>
+
+            <div class="choice" id="computer-choice">
+                <img>
+                <div class="caption"></div>
+            </div>
+
+        </div>
+
+    </div>
+
     <script src="rps.js"></script>
+
 </body>
 
 </html>

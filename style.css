@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+
+.section {
+    width: 720px;
+    margin: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.message {
+    text-align: center;
+    font-size: 22px;
+}
+
+.caption {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Game scoreboard */
+
+#scoreboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#scoreboard .title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#scoreboard .player-info {
+    text-align: center;
+}
+
+#scoreboard .name {
+    font-weight: bold;
+}
+
+#restart-button {
+    font-size: 20px;
+}
+
+/* Player input */
+
+#input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+#shape-selector {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#shape-selector button {
+    width: 180px;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button.rock {
+    background-image: url("./img/rock.png");
+}
+
+button.paper {
+    background-image: url("./img/paper.png");
+}
+
+button.scissors {
+    background-image: url("./img/scissors.png");
+}
+
+/* Results of the round */
+
+#round-results {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+#round-results.is-hidden {
+    display: none;
+}
+
+#chosen-shapes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#chosen-shapes img {
+    width: 120px;
+    height: auto;
+}
+
+#chosen-shapes img.rock {
+    content: url("./img/rock.png");
+}
+
+#chosen-shapes img.paper {
+    content: url("./img/paper.png");
+}
+
+#chosen-shapes img.scissors {
+    content: url("./img/scissors.png");
+}
